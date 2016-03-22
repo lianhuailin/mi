@@ -55,12 +55,16 @@
                                           </div>
                                           <input class="item_account" autocomplete="off" name="user" id="username" placeholder="邮箱/手机号码/小米帐号" type="text">
                                       </label>
-                                      <div class="country-container" id="countrycode_container" style="display: none;"></div>
                                       <label class="labelbox c_b">
                                           <div></div>
                                           <input placeholder="密码" name="pwd" id="pwd" type="password">
                                       </label>
                                   </div>
+
+                                    <div class="err_tip" id="error-outcon" style="display: block;">
+                                        <div class="dis_box"><em class="icon_error"></em><span class="error-con">用户名不正确吗？？？？</span>
+                                      </div>
+                                    </div>
                                     <!-- 登录频繁 -->
                                     <div class="btns_bg">
                                         <input class="btnadpt btn_orange" id="login-button" value="立即登录" type="submit">
@@ -74,7 +78,7 @@
                                             <a target="_blank" class="icon_type btn_qq sns-login-link" data-type="qq" href="index.html" title="QQ登录"><i class="btn_sns_icontype icon_default_qq"></i></a>
                                             <a target="_blank" class="icon_type btn_weibo sns-login-link" data-type="weibo" href="index.html" title="微博登录"><i class="btn_sns_icontype icon_default_weibo"></i></a>
                                             <a target="_blank" class="icon_type btn_alipay sns-login-link" data-type="alipay" href="index.html" title="支付宝登录"><i class="btn_sns_icontype icon_default_alipay"></i></a>
-                                            <a style="display: none;" class="icon_type btn_weixin sns-login-link" data-type="weixin" href="javascript:void(0)" title="微信登录"><i class="btn_sns_icontype icon_default_weixin"></i></a>
+                                            <!-- <a style="display: none;" class="icon_type btn_weixin sns-login-link" data-type="weixin" href="javascript:void(0)" title="微信登录"><i class="btn_sns_icontype icon_default_weixin"></i></a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -672,7 +676,6 @@
             -ms-filter: grayscale(100%);
             -o-filter: grayscale(100%);
             filter: grayscale(100%);
-            filter: url(https://account.xiaomi.com/static/res/e5c6b4e/account-static/respassport/acc-2014/sass/gray.svg#grayscale)
         }
         .icon_type:hover {
             -webkit-filter: grayscale(0);

@@ -100,7 +100,7 @@
 
 
     <div class="section section-specs container is-visible">
-        <div class="spec-title spec-open" id="J_showSpec">小米手机5参数<i id="show_detail" class="arrow" onclick="show()" ></i> </div>
+        <div class="spec-title spec-open" id="J_showSpec">小米手机5参数<i id="show_detail" class="arrow" onclick="toggle()" ></i> </div>
             <div id="show" style="display:block;">
                 <ul class="spec-list clearfix" id="J_specCon">
                     <li class="spec-item">
@@ -302,8 +302,16 @@
 
     <!-- <script src="js/base.min.js?v2016b"></script> -->
     <script>
-        function show () {
-            document.getElementById('show').style.display = "none";
+        function toggle () {
+            var e = document.getElementById('show');
+            if(e.style.display=="block")
+            {
+            e.style.display="none";
+            }
+            else
+            {
+            e.style.display="block";
+            }
         }
     </script>
 
